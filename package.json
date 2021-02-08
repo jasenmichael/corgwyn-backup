@@ -1,0 +1,32 @@
+{
+  "name": "corgwyn",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "cmsProxy": "npx netlify-cms-proxy-server"
+  },
+  "dependencies": {
+    "@nuxt/content": "^1.11.1",
+    "@tailwindcss/aspect-ratio": "^0.2.0",
+    "@tailwindcss/forms": "^0.2.1",
+    "@tailwindcss/typography": "^0.4.0",
+    "core-js": "^3.8.2",
+    "netlify-identity-widget": "^1.9.1",
+    "nuxt": "^2.14.12",
+    "tailwind-hamburgers": "^1.0.2",
+    "vue2-smooth-scroll": "^1.5.0"
+  },
+  "devDependencies": {
+    "@nuxt/image": "0.0.4",
+    "@nuxtjs/pwa": "^3.3.4",
+    "@nuxtjs/tailwindcss": "^3.4.2",
+    "@tailwindcss/postcss7-compat": "^2.0.2",
+    "autoprefixer": "^9.8.6",
+    "postcss": "^7.0.35",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2"
+  }
+}

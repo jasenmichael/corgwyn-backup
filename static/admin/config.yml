@@ -1,0 +1,37 @@
+# site_url: http://localhost:3000
+logo_url: /icon.png
+# publish_mode: editorial_workflow
+backend:
+  name: git-gateway
+  branch: main
+local_backend:
+  url: http://localhost:8081/api/v1
+media_folder: static/img
+public_folder: /img
+collections:
+  - label: Corgis
+    label_singular: Corgi
+    extension: json
+    name: corgis
+    folder: content/corgis
+    slug: '{{name}}'
+    create: true
+    fields:
+      - label: Name
+        name: name
+        widget: string
+      - label: Corgi Image
+        name: image
+        widget: image
+        required: true
+        allow_multiple: false
+      - label: Age in years
+        name: age
+        widget: number
+        default: 1
+      - label: Story
+        name: story
+        widget: text
+      # - label: Body
+      #   name: body
+      #   widget: markdown
